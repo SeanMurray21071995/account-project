@@ -26,7 +26,7 @@ public class Service {
 		JSONObject accountReturn = new JSONObject(accounts);
 	/*	while (it.hasNext()) {
 	        Map.Entry pair = (Map.Entry)it.next();
-	        System.out.println(pair.getKey() + " = " + pair.getValue());
+	        System.out.println(pair.getKey() + " = " + pair.getVale());
 	        accountReturn.put( pair.getKey().toString(), ((Account) pair.getValue()).toJSONObject());
 		}*/
 		return accountReturn;	
