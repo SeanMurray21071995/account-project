@@ -1,5 +1,7 @@
 package accountApplication;
 
+import org.json.JSONObject;
+
 public class Account {
 	private String firstName; 
 	private String secondName; 
@@ -40,5 +42,14 @@ public class Account {
 	public String toString() 
 	{
 		return this.firstName+" "+this.secondName+" "+this.accountNumber;
+	}
+	
+	public JSONObject toJSONObject() 
+	{	
+		JSONObject accountReturn = new JSONObject();
+		accountReturn.put("firstName", this.firstName);
+		accountReturn.put("secondName", this.secondName);
+		accountReturn.put("accountNumber", this.accountNumber);
+		return accountReturn;	
 	}
 }
