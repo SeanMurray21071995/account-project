@@ -17,13 +17,13 @@ public class TestAccount {
 	}
 	@Test
 	public void testAccountGetFirstName() {
-		assertEquals("Did not retrieve the first name",acc.getFirst_name(),"test");
+		assertEquals("Did not retrieve the first name",acc.getFirstName(),"test");
 	}
 	
 	@Test 
 	public void testAccountGetSecondName() 
 	{
-		assertEquals("Did not retrieve the second name",acc.getSecond_name(),"test" );
+		assertEquals("Did not retrieve the second name",acc.getSecondName(),"test" );
 	}
 	
 	@Test

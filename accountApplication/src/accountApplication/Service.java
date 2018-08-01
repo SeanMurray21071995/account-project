@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class Service {
 	
-	private HashMap<Integer, Account> accounts = new HashMap<Integer, Account>();
+	private HashMap<Integer, Account> accounts = new HashMap<>();
 	
 	public void addAccount(Account acc) 
 	{	
