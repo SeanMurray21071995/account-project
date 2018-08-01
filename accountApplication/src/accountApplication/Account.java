@@ -7,7 +7,9 @@ public class Account {
 	
 	public Account (String first_name, String second_name, int accountNumber) 
 	{
-		
+		setFirst_name(first_name);
+		setSecond_name(second_name);
+		setAccountNumber(accountNumber);
 	}
 
 	public String getFirst_name() {
@@ -34,4 +36,9 @@ public class Account {
 		this.accountNumber = accountNumber;
 	}
 	
+	@Override
+	public String toString() 
+	{
+		return this.first_name+" "+this.second_name+" "+this.accountNumber;
+	}
 }
