@@ -23,6 +23,6 @@ public class Main {
 		serv.addAccount(accSean);
 		serv.addAccount(accRosie);
 		System.out.println(serv.jobj());
-		
+		System.out.println(serv.getFirstNameCount("Sean"));
 	}
 }

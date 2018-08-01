@@ -19,15 +19,16 @@ public class TestService {
 	@Test 
 	public void getAddAccount() 
 	{
-		serv.addAccount(acc);
 		assertEquals("did not retriev the data from the hash map", serv.getAccount(1),acc);
 	}
-
-
 	@Test
 	public void testTestFirstNameCount() 
 	{
-		
 		assertEquals("didn't get the correct count",serv.getFirstNameCount("test"),1);
 	} 
+	@Test
+	public void testFirstNameMiss() 
+	{
+		assertEquals("went into the if statment",serv.getFirstNameCount("paul"),0);
+	}
 }
