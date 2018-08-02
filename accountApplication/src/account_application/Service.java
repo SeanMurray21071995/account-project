@@ -1,4 +1,4 @@
-package accountApplication;
+package account_application;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -23,7 +23,7 @@ public class Service {
 	
 	public JSONObject jobj() 
 	{
-		Iterator it = accounts.entrySet().iterator();
+		//Iterator<Entry<Integer, Account>> it = accounts.entrySet().iterator();
 		JSONObject accountReturn = new JSONObject(accounts);
 	/*	while (it.hasNext()) {
 	        Map.Entry pair = (Map.Entry)it.next();
@@ -31,7 +31,7 @@ public class Service {
 	        accountReturn.put( pair.getKey().toString(), ((Account) pair.getValue()).toJSONObject());
 		}*/
 		return accountReturn;	
-	}
+	} 
 	 
 	public int getFirstNameCount(String lookForName) 
 	{
@@ -42,7 +42,7 @@ public class Service {
 			Map.Entry<Integer, Account> entry = (Map.Entry<Integer, Account>)it.next();
 		 	if((((Account)entry.getValue()).getFirstName()).equals(lookForName)) 
 			{ 
-				count = count +1;
+				count++;
 			} 
 		}
 		return count;

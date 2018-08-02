@@ -1,4 +1,4 @@
-package accountApplication;
+package account_application;
 
 import org.json.JSONObject;
 

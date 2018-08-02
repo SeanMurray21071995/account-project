@@ -1,12 +1,12 @@
-package testAccountApplication;
+package test_account_application;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import accountApplication.Account;
-import accountApplication.Service;
+import account_application.Account;
+import account_application.Service;
 
 public class TestService {
 	private Service serv = new Service();
@@ -30,5 +30,10 @@ public class TestService {
 	public void testFirstNameMiss() 
 	{
 		assertEquals("went into the if statment",serv.getFirstNameCount("paul"),0);
+	}
+	@Test
+	public void testJobj() 
+	{
+		assertNotNull("did not work",serv.jobj().get("1"));
 	}
 }

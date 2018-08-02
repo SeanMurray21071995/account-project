@@ -1,4 +1,4 @@
-package accountApplication;
+package account_application;
 
 public class Main {
 
