@@ -3,6 +3,7 @@ package accountApplication;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import org.json.JSONObject;
 
@@ -35,14 +36,14 @@ public class Service {
 	public int getFirstNameCount(String lookForName) 
 	{
 		int count = 0;
-		Iterator it = accounts.entrySet().iterator();
+		Iterator<Entry<Integer, Account>> it = accounts.entrySet().iterator();
 		while(it.hasNext()) 
 		{
-			Map.Entry entry = (Map.Entry)it.next();
+			Map.Entry<Integer, Account> entry = (Map.Entry<Integer, Account>)it.next();
 		 	if((((Account)entry.getValue()).getFirstName()).equals(lookForName)) 
 			{ 
 				count = count +1;
-			}
+			} 
 		}
 		return count;
 	}
